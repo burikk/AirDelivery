@@ -8,12 +8,14 @@ body
 	font-family: 'Arial', sans-serif;
 	font-size: 20px;
 	margin: 0 !important;
-	background-image: url(fon.jpg);
+	background-image: url(images/fon.jpg);
+	background-attachment: fixed;
 	height: 100%;
 }
 #container
 {
 	height: 100%;
+	margin: 0 auto;
 }
 .logo
 {
@@ -37,7 +39,7 @@ body
 	text-align: center;
 	color: white;
 }
-ol
+.menu ol
 {
 	padding: 0;
 	margin: 0;
@@ -47,30 +49,145 @@ ol
 	line-height: 150%;
 	height: 50px;
 }
-ol a
+.menu ol a
 {
 	color: white;
 	text-decoration: none;
 	line-height: 50px;
 }
-ol > li
+.menu ol > li
 {
 	float: left;
-	width: 150px;
+	width: 125px;
 }
-ol > li:hover > a
+.menu ol > li > a:hover
 {
 	color: rgb(200, 200, 200);
 }
+.menu ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	display: none;
+}
+.menu ol > li:hover > ul
+{
+	display: block;
+}
+.menu ol > li > ul > li
+{
+	background-color: black;
+	position: relative;
+	z-index: 100;
+}	
+.menu ol > li > ul > li > a:hover
+{
+	color: rgb(200, 200, 200);
+}
+#slider
+{
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	padding-top:5px;
+	position: relative;
+	
+}
+#clock
+{
+	font-family: "clockfont";
+	font-size: 30px;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	padding-top: 7px;
+}
 .content
 {
-	height: 100%;
+	min-height: 100%;
 	width: 1050px;
 	margin: 0 auto;
+
+	padding-bottom: 80px;
+	text-align: justify;
 }
 footer
 {
 	line-height:100px;
 	height: 100px;
 	background-color: black;
+	margin-top: -100px;
 }
+.social
+{
+	text-align: center;
+}
+.social ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.social ul li
+{
+	display: inline-block;
+	width: 125px;
+}
+.social ul li a
+{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+.social ul li a:hover
+{
+	color: rgb(200, 200, 200);
+}
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.content {margin: 0 auto;}
+
+@media (min-width: 1100px) {
+	.content {width: 1050px;}
+}
+@media (max-width: 1100px) and (min-width: 1000px) {
+.content {width:950px;}
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+.content {width:750px;}
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+.content {width:450px;}
+}
+
+@media (max-width: 500px) {
+.content {width:300px;}
+}
+
+
+
+
+
+
+
+
+@font-face {
+font-family: "clockfont"; 
+src: url("fonts/clockfont.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
