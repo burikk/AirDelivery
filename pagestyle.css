@@ -1,0 +1,201 @@
+* {
+	box-sizing: border-box;
+}
+
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+	margin: 0 !important;
+	background-image: url(images/fon.jpg);
+	background-attachment: fixed;
+	height: 100%;
+}
+#container
+{
+	height: 100%;
+	margin: 0 auto;
+}
+.logo
+{
+	width: 100%;
+	font-size: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: black;
+	line-height: 100px;
+}
+.logo a
+{
+	text-decoration: none;
+	color: white;
+}
+.menu
+{
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+.menu ol
+{
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	list-style-type: none;
+	display: inline-block;
+	line-height: 150%;
+	height: 50px;
+}
+.menu ol a
+{
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+}
+.menu ol > li
+{
+	float: left;
+	width: 125px;
+}
+.menu ol > li > a:hover
+{
+	color: rgb(200, 200, 200);
+}
+.menu ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	display: none;
+}
+.menu ol > li:hover > ul
+{
+	display: block;
+}
+.menu ol > li > ul > li
+{
+	background-color: black;
+	position: relative;
+	z-index: 100;
+}	
+.menu ol > li > ul > li > a:hover
+{
+	color: rgb(200, 200, 200);
+}
+#slider
+{
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	padding-top:5px;
+	position: relative;
+	
+}
+#clock
+{
+	font-family: "clockfont";
+	font-size: 30px;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	padding-top: 7px;
+}
+.content
+{
+	min-height: 100%;
+	width: 1050px;
+	margin: 0 auto;
+
+	padding-bottom: 80px;
+}
+footer
+{
+	line-height:100px;
+	height: 100px;
+	background-color: black;
+}
+.social
+{
+	text-align: center;
+}
+.social ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.social ul li
+{
+	display: inline-block;
+	width: 125px;
+}
+.social ul li a
+{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+.social ul li a:hover
+{
+	color: rgb(200, 200, 200);
+}
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.DynamicExtraField {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid blue;
+}
+
+.content {margin: 0 auto;}
+
+input, select, button {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 1100px) {
+	.content {width: 1050px;}
+}
+@media (max-width: 1100px) and (min-width: 1000px) {
+.content {width:950px;}
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+.content {width:750px;}
+}
+
+@media (max-width: 800px) {
+	.content {width: 90%;}
+	
+	input, select, button {
+		width: 100%;
+		font-size: 160%;
+	}
+
+}
+
+
+@font-face {
+font-family: "clockfont"; 
+src: url("fonts/clockfont.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
