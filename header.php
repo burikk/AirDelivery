@@ -1,8 +1,8 @@
 <header>
-		<div class="logo"><a href="mainpage.php"><b>Air</b>Delivery</a></div>
+		<div class="logo"><a href="index.php"><b>Air</b>Delivery</a></div>
 		<div class="menu">
 			<ol>
-				<li><a href="mainpage.php">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="delivery.php">Delivery</a></li>
 				<li><a href="company.php">Company</a>
 				<ul> 

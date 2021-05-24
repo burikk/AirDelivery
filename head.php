@@ -13,5 +13,10 @@
 	<script type="text/javascript" src="js/dynamicfield.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 
+	<link href="lib/image-uploader.min.css" rel="stylesheet">
+	<script src="lib/image-uploader.min.js"></script>
+	<script src="js/dragndrop.js"></script>
+	<script src="js/validateform.js"></script>
+
 	<link rel="stylesheet" href="pagestyle.css">
 </head>

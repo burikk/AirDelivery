@@ -13,21 +13,22 @@
 	<script type="text/javascript" src="js/sticky.js"></script>
 	<script type="text/javascript" src="js/clock.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/dynamicfield.js"></script>
 	<link rel="stylesheet" href="pagestyle.css">
 </head>
 
 <body onload="currentTime(); changeslide();">
 	<div id="container">
 		<header>
-			<div class="logo"><a href="mainpage.html"><b>Air</b>Delivery</a></div>
+			<div class="logo"><a href="index.php"><b>Air</b>Delivery</a></div>
 			<div class="menu">
 				<ol>
-					<li><a href="mainpage.html">Home</a></li>
-					<li><a href="delivery.html">Try Form</a></li>
-					<li><a href="company.html">Company</a>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="delivery.php">Delivery</a></li>
+					<li><a href="company.php">Company</a>
 						<ul> 
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="contact.php">Contact</a></li>
+							<li><a href="aboutus.php">About Us</a></li>
 						</ul>
 					</li>
 				</ol>
