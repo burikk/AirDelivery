@@ -11,7 +11,8 @@
 	</li>
 	
 	<li>Choose date: <p><input type="date" name="date"></p></li>
-	Single cargo info:
+	<!-- <li>Drop files: <p><input type="file" name="dropFiles" accept=".jpg, .png, .doc, .docx, .pdf" multiple></p></li> -->
+  	Single cargo info:
 	<div id="DynamicExtraFieldsContainer">
      	<div id="addDynamicField">
         	<input type="button" id="addDynamicExtraFieldButton" value="Add new cargo">
@@ -23,11 +24,11 @@
             <input type="text" name="cargoName[]">
             <input type="number" name="cargoWeight[]" min="0" max="50000">
             <select name="selectCargo[]">
-				<option value="Regularcargo[]">Regular cargo</option>
-				<option value="Dangerouscargo[]">Dangerous cargo</option>
+				<option value="Regularcargo">Regular cargo</option>
+				<option value="Dangerouscargo">Dangerous cargo</option>
 			</select>
         </div>
     </div>
-	<p><input type="submit"  value ="Submit" name="submit"></p>
+	<p><input type="submit"  value ="Submit"></p>
 
 </form>

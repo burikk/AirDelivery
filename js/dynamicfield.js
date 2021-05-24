@@ -37,15 +37,13 @@ function addDynamicExtraField() {
    	name : 'selectCargo[]',
    }).appendTo(div);
    	var option = $('<option/>', {
-   	value : 'Regularcargo[]'
+   	value : 'Regularcargo'
    }).html("Regular cargo").appendTo(select);
    	var option1 = $('<option/>', {
-   	value : 'Dangerouscargo[]'
+   	value : 'Dangerouscargo'
    }).html("Dangerous cargo").appendTo(select);
-  //Добавляем уже собранный DIV в DynamicExtraFieldsContainer
 }
  
-//Для удаления первого поля
 $('.DeleteDynamicExtraField').click(function(event) {
   $(this).parent().remove();
   return false;
